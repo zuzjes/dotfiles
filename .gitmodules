@@ -1,0 +1,3 @@
+[submodule "ondrejsika-dotfiles"]
+	path = ondrejsika-dotfiles
+	url = https://github.com/ondrejsika/dotfiles.git
