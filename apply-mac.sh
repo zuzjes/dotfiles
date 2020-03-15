@@ -17,3 +17,7 @@ echo "" >> ~/.bash_aliases
 echo ". ~/.bash_aliases" >> ~/.profile
 
 echo ". $(pwd)/core/bashrc" >> ~/.profile
+
+# Hammer Spoon
+rm -rf ~/.hammerspoon
+ln -s $(pwd)/ondrejsika-dotfiles/mac/hammerspoon ~/.hammerspoon
