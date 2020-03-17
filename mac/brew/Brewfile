@@ -4,6 +4,7 @@ tap "homebrew/core"
 tap "homebrew/services"
 brew "git"
 brew "openssl@1.1"
+brew "git-gui"
 brew "htop"
 brew "kubernetes-cli", link: false
 brew "libav"
