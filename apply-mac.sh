@@ -21,3 +21,7 @@ echo ". $(pwd)/core/bashrc" >> ~/.profile
 # Hammer Spoon
 rm -rf ~/.hammerspoon
 ln -s $(pwd)/ondrejsika-dotfiles/mac/hammerspoon ~/.hammerspoon
+
+# VIM
+rm -rf ~/.vimrc
+ln -s $(pwd)/ondrejsika-dotfiles/core/vimrc ~/.vimrc
