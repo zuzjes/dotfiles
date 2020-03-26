@@ -5,6 +5,7 @@
 # Bash
 echo ". $(pwd)/ondrejsika-dotfiles/core/3rdparty/git-prompt.sh" >> ~/.profile
 echo ". $(pwd)/ondrejsika-dotfiles/core/3rdparty/git-completion.sh" >> ~/.profile
+echo ". $(pwd)/ondrejsika-dotfiles/core/3rdparty/complete_alias" >> ~/.profile
 echo ". $(pwd)/ondrejsika-dotfiles/core/bashrc" >> ~/.profile
 
 # zuzjes/dotfiles
