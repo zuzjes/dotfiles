@@ -19,6 +19,10 @@ echo ". ~/.bash_aliases" >> ~/.profile
 
 echo ". $(pwd)/core/bashrc" >> ~/.profile
 
+# ZSH
+echo "" > ~/.zshrc
+echo ". $(pwd)/core/zshrc" >> ~/.zshrc
+
 # Hammer Spoon
 rm -rf ~/.hammerspoon
 ln -s $(pwd)/ondrejsika-dotfiles/mac/hammerspoon ~/.hammerspoon

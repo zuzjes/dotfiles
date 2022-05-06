@@ -1,0 +1,41 @@
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="robbyrussell"
+plugins=(git kube-ps1 docker docker-compose)
+source $ZSH/oh-my-zsh.sh
+
+export GIT_AUTHOR_NAME="Zuzana Jeschke"
+export GIT_COMMITTER_NAME="Zuzana Jeschke"
+export GIT_COMMITTER_EMAIL=zuz@zuzjes.com
+export GIT_AUTHOR_EMAIL=zuz@zuzjes.com
+
+# ~/bin
+
+[ -d "${HOME}/bin" ] && export PATH="${HOME}/bin:${PATH}"
+
+# Individual history per tab
+#
+# See: https://superuser.com/a/1248123/675796
+unsetopt inc_append_history
+unsetopt share_history
+
+# Git
+
+alias st='git status'
+alias sta='git status --untracked-files=all'
+alias di='git diff'
+alias dis='git diff --staged'
+alias dit='git diff | tig'
+alias dist='git diff --staged | tig'
+alias ci='git commit'
+alias co='git checkout'
+alias br='git branch'
+alias ad='git add'
+alias fa='git fetch --all --prune'
+alias ga='gitk --all'
+
+# slu
+. <(slu completion zsh); compdef _slu slu
+
+# NVM (Node Version Manager)
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
